@@ -316,11 +316,39 @@ true
 
 ---
 
-# Erlangで大事なこと
+# Erlang/Elixirで大事なこと
 
 # [fit] 軽量並行プロセス
 # [fit] エラーハンドリング
 # [fit]（と、Immutabilityだと、力武は思っています）
+
+---
+
+# 軽量並行プロセス
+
+<!-- TBD -->
+
+---
+
+# Erlangのエラーハンドリング
+# リンク (link)
+# モニター (monitor)
+
+---
+
+# リンクによる例外シグナル [^1]
+
+![inline, original, fit](trapexit.jpg)
+
+[^1]: https://github.com/jj1bdx/ipsj-tokai-20121029-public/blob/master/boogieboard/trapexit.jpg
+
+---
+
+# モニターによる例外メッセージ[^2]
+
+![inline, original, fit](monitor-exit.jpg)
+
+[^2]: 力武健次、「Erlangで学ぶ並行プログラミング第8回」、Software Design 2015年11月号、技術評論社、p. 124の図を再構成。
 
 ---
 
@@ -360,6 +388,7 @@ true
 
 ---
 
+# [fit] おしまい
 # [fit] ありがとうございました
 # [fit] ご質問をどうぞ
 
@@ -367,13 +396,16 @@ true
 
 [.autoscale: true]
 
-# Photo credits
+# 写真等クレジット
 
 * Title: [Samuel Wong](https://unsplash.com/photos/rznBKkZiIEk) on Unsplash.com
 * José Valim: By Augie De Blieck from USA (elixirconf-47), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0), [via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/e/ed/Jos%C3%A9_Valim_-_elixirconf-47_%2814795675281%29.jpg)
 * Dave Thomas: By James Davidson (Flickr: Dave Thomas) [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)], [via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/f/fe/Dave_Thomas_speaking_at_the_Pasadena_Rails_Studio.jpg)
 * [Pragmatic Bookshelf Elixir/OTP/Phoenix books page](https://pragprog.com/titles/category/elixir)
+* [リンクによる例外シグナル送信例](https://github.com/jj1bdx/ipsj-tokai-20121029-public/blob/master/boogieboard/trapexit.jpg)
+
 * スライド中の書籍の表紙と中表紙についてはオーム社、No Starch Press, Pragmatic Bookshelfの書籍情報を専ら書籍紹介の目的で使用しています。
+* 上記に注釈のない写真、図、絵については力武健次が撮影、編集、制作しています。
 
 <!--
 Local Variables:
