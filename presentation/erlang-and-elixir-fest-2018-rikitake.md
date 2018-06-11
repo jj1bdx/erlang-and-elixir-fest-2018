@@ -1,5 +1,5 @@
 theme: Simple, 2
-footer: Kenji Rikitake / Erlang and Elixir Fest 2018 16-JUN-2017
+footer: Kenji Rikitake / Erlang and Elixir Fest 2018 16-JUN-2018
 slidenumbers: true
 
 <!-- Use Deckset 2.0, 4:3 aspect ratio -->
@@ -473,7 +473,7 @@ GRiSP / Nerves / 各種組み込みボードでの実行
 
 * Title: [Samuel Wong](https://unsplash.com/photos/rznBKkZiIEk) on Unsplash.com
 * José Valim: By Augie De Blieck from USA (elixirconf-47), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0), [via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/e/ed/Jos%C3%A9_Valim_-_elixirconf-47_%2814795675281%29.jpg)
-* Dave Thomas: By James Davidson (Flickr: Dave Thomas) [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)], [via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/f/fe/Dave_Thomas_speaking_at_the_Pasadena_Rails_Studio.jpg)
+* Dave Thomas: By James Davidson (Flickr: Dave Thomas) [CC BY 2.0](https://creativecommons.org/licenses/by/2.0), [via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/f/fe/Dave_Thomas_speaking_at_the_Pasadena_Rails_Studio.jpg)
 * [Pragmatic Bookshelf Elixir/OTP/Phoenix books page](https://pragprog.com/titles/category/elixir)
 * [リンクによる例外シグナル送信例](https://github.com/jj1bdx/ipsj-tokai-20121029-public/blob/master/boogieboard/trapexit.jpg)
 * モニターによる例外メッセージ送信例: 力武健次、「Erlangで学ぶ並行プログラミング第8回」、Software Design 2015年11月号、技術評論社、p. 124の図を再構成。
