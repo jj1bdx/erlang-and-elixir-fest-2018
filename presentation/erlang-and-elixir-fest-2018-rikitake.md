@@ -8,7 +8,7 @@ slidenumbers: true
 
 # [fit] ErlangとElixirが突き付けるもの
 ## [fit] あるいは性能と安全の終わりなき戦いについて
-
+## [fit] Erlang/OTPとのこの10年を振り返りつつ考える
 ---
 
 ![right, fit](kenji-20180530-stockholm.jpg)
@@ -23,6 +23,7 @@ Erlang and Elixir Fest 2018
 
 ---
 
+### [PR]
 # [fit] お仕事募集中です
 ## 53歳 / プログラミング歴44年
 ## ソフトウェアエンジニア歴28年目
@@ -36,6 +37,8 @@ Erlang and Elixir Fest 2018
 # [fit] この10年を振り返る
 
 ---
+
+![fit](erlang-logo.jpg)
 
 # [fit] Erlang/OTPとの出会い
 
@@ -95,11 +98,13 @@ Erlang and Elixir Fest 2018
 
 ---
 
-# [fit] 面白くなってくる
+# [fit] 面白くなってきた
 
 ---
 
-# [fit] Elixirとの出会い
+# [fit] Elixirとの出会い [^*]
+
+[^*]: [ElixirのロゴはPlataformatecで商標登録作業中のため許可なく使うことはできません](https://github.com/elixir-lang/elixir-lang.github.com/issues/575#issuecomment-388836462)。
 
 ---
 
@@ -183,7 +188,7 @@ Erlang and Elixir Fest 2018
 
 ![](openerlangparty.jpg)
 
-# 会議のテーマ
+# 会議のテーマ（の一部）
 
 ## [fit] Open Erlang 20周年
 ## [fit] BEAMコミュニティの融合
@@ -191,16 +196,7 @@ Erlang and Elixir Fest 2018
 
 ---
 
-# [fit] コミュニティの成熟と成長
-# [fit] 技術の先に何を目指すか
-
----
-
 # [fit] 長い前振りを終わります
-
----
-
-# [fit] 本題
 
 ---
 
@@ -210,7 +206,7 @@ Erlang and Elixir Fest 2018
 
 ---
 
-# 力武にとっての衝撃
+# 力武の考えるメリット
 # [fit] Immutability
 # [fit] ディープコピー
 # [fit] 参照を使わない
@@ -320,13 +316,34 @@ true
 
 # [fit] 軽量並行プロセス
 # [fit] エラーハンドリング
-# [fit]（と、Immutabilityだと、力武は思っています）
+# [fit]（と、immutabilityだと、力武は思っています）
 
 ---
 
-# 軽量並行プロセス
+# 軽量並行プロセス [^1]
 
-<!-- TBD -->
+## [fit] 処理過程はそれぞれプロセスに割り当てられて並行に処理
+
+| 入力 | |  処理 |  | 出力 |
+| ---- | :-: | :--: | :-: | ---: |
+| 入力1 | → | 処理1 | → | 出力1 |
+| 入力2 | → | 処理2 | → | 出力2 |
+| 入力3 | → | 処理3 | → | 出力3 |
+| 入力4 | → | 処理4 | → | 出力4 |
+
+[^1]: Francesco Cesarini, Simon Thompson, "Erlang Programming", O'Reilly Media, 2009, p. 112, Figure 4-14 より力武健次によって再構成
+
+---
+
+# [fit] 軽量プロセスのコントロール [^2]
+
+## [fit] 作るのはspawn一発
+## [fit] 落とすのはlinkやmonitorでOK
+## [fit] きれいに落とすのは大変
+## [fit] プロセスキューが詰まると終了
+## [fit] 処理が遅いので注意
+
+[^2]: 昨年のElixir Conf Japan 2017の@voluntasによる講演[「なぜ Erlang/OTP を使い続けるのか」](https://gist.github.com/voluntas/81ab2fe15372c9c67f3e0b12b3f534fa)を参照
 
 ---
 
@@ -336,19 +353,68 @@ true
 
 ---
 
-# リンクによる例外シグナル [^1]
-
-![inline, original, fit](trapexit.jpg)
-
-[^1]: https://github.com/jj1bdx/ipsj-tokai-20121029-public/blob/master/boogieboard/trapexit.jpg
+![original, fit](trapexit.jpg)
 
 ---
 
-# モニターによる例外メッセージ[^2]
+![original, fit](monitor-exit.jpg)
 
-![inline, original, fit](monitor-exit.jpg)
+---
 
-[^2]: 力武健次、「Erlangで学ぶ並行プログラミング第8回」、Software Design 2015年11月号、技術評論社、p. 124の図を再構成。
+#[fit] Erlang/Elixirの今後
+
+---
+
+![fit](flag-of-sweden.png)
+
+# 基本理念
+
+#[fit]Lagom är bäst
+#[fit]ほどほどなのが一番良い
+
+---
+
+# ほどほど、とは
+
+#[fit]安全は高速化に優先
+#[fit]**手を抜かずに高速化**
+#[fit]ケンカしない/させないコミュニティ
+#[fit]急がずできることを着実にやっていく
+
+---
+
+![original, fit](grisp-board.jpg)
+
+# 組み込み分野への応用
+
+GRiSP / Nerves / 各種組み込みボードでの実行
+
+---
+
+# 今後の発展の予想
+
+# [fit] 大規模(>1000ノード)クラスタ
+# [fit] ブロックチェーン (Aeternity)
+# [fit] Erlang/Elixir以外の各種言語
+# [fit] Gradual Type System
+# [fit] Language Server Protocol
+
+---
+
+# Erlang/Elixirコミュニティ
+
+# [fit]他の言語にくらべると小さなコミュニティです
+# [fit]すごい人だらけで勉強できます
+# [fit]Elixirのおかげで新しい人も増えました
+# [fit]難しい言語システムなのでレベルが高いです
+# [fit]飛び込んでいくと親切にしてくれます
+
+---
+
+# [fit]**性能よりも安全を**
+# [fit]優先できる人ならば
+# [fit]ErlangやElixirに
+# [fit]向いていると思います
 
 ---
 
@@ -366,6 +432,11 @@ true
 # [fit] 日本国外で
 # [fit] 英語の
 # [fit] 成果発表を!
+
+---
+
+# [fit] よろしく
+# [fit] お願いします!
 
 ---
 
@@ -388,6 +459,8 @@ true
 
 ---
 
+![original](ericsson-kista.jpg)
+
 # [fit] おしまい
 # [fit] ありがとうございました
 # [fit] ご質問をどうぞ
@@ -403,7 +476,9 @@ true
 * Dave Thomas: By James Davidson (Flickr: Dave Thomas) [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)], [via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/f/fe/Dave_Thomas_speaking_at_the_Pasadena_Rails_Studio.jpg)
 * [Pragmatic Bookshelf Elixir/OTP/Phoenix books page](https://pragprog.com/titles/category/elixir)
 * [リンクによる例外シグナル送信例](https://github.com/jj1bdx/ipsj-tokai-20121029-public/blob/master/boogieboard/trapexit.jpg)
-
+* モニターによる例外メッセージ送信例: 力武健次、「Erlangで学ぶ並行プログラミング第8回」、Software Design 2015年11月号、技術評論社、p. 124の図を再構成。
+* スウェーデン国旗: By Jon Harald Søby and others. Public domain, [via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Sweden.svg)
+* ペパボ研究所ロゴ: GMOペパボ株式会社
 * スライド中の書籍の表紙と中表紙についてはオーム社、No Starch Press, Pragmatic Bookshelfの書籍情報を専ら書籍紹介の目的で使用しています。
 * 上記に注釈のない写真、図、絵については力武健次が撮影、編集、制作しています。
 
