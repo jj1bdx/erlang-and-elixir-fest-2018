@@ -93,6 +93,8 @@ Erlang and Elixir Fest 2018
 # [fit]実は2011年に
 
 ## [fit]すごいE本
+## そして
+## [fit]Erlang In Anger
 ## [fit]…の原典となるプレゼンが
 ## [fit]サンフランシスコで行われた
 
@@ -169,7 +171,8 @@ Erlang and Elixir Fest 2018
 
 # [fit] erlang-questions メーリングリストにて
 # こともあろうに差別用語を自分のレポジトリに付けてしまった人がいた
-# **すごいE本の著者が抗議**
+# [fit]**すごいE本とErlang In Angerの**
+# **著者が抗議**
 
 ---
 
