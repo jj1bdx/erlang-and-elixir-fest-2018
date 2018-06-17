@@ -368,8 +368,6 @@ true
 
 ---
 
-![fit](flag-of-sweden.png)
-
 # 基本理念
 
 #[fit]Lagom är bäst
